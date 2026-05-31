@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 10 Tourist Places</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+        
+        .place-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .place-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+        
+        .rank {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 10px;
+            font-size: 1.3em;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        .place-content {
+            padding: 20px;
+        }
+        
+        .place-name {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .place-country {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 12px;
+        }
+        
+        .place-description {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95em;
+        }
+        
+        footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Top 10 Tourist Places</h1>
+            <p class="subtitle">Explore the Most Amazing Destinations Around the World</p>
+        </header>
+        
+        <div class="places-grid">
+            <!-- 1. Eiffel Tower -->
+            <div class="place-card">
+                <div class="rank">1</div>
+                <div class="place-content">
+                    <div class="place-name">Eiffel Tower</div>
+                    <div class="place-country">Paris, France</div>
+                    <div class="place-description">An iconic iron lattice tower and symbol of Paris, attracting millions of visitors annually. Built in 1889, it offers stunning views of the city from its observation decks.</div>
+                </div>
+            </div>
+            
+            <!-- 2. Statue of Liberty -->
+            <div class="place-card">
+                <div class="rank">2</div>
+                <div class="place-content">
+                    <div class="place-name">Statue of Liberty</div>
+                    <div class="place-country">New York, USA</div>
+                    <div class="place-description">A colossal neoclassical sculpture representing freedom and democracy. Located on Liberty Island, it's one of America's most recognizable monuments and a UNESCO World Heritage Site.</div>
+                </div>
+            </div>
+            
+            <!-- 3. Great Wall of China -->
+            <div class="place-card">
+                <div class="rank">3</div>
+                <div class="place-content">
+                    <div class="place-name">Great Wall of China</div>
+                    <div class="place-country">China</div>
+                    <div class="place-description">An ancient series of fortifications spanning thousands of kilometers. Built to protect against invasions, it's one of the most impressive architectural achievements in human history.</div>
+                </div>
+            </div>
+            
+            <!-- 4. Taj Mahal -->
+            <div class="place-card">
+                <div class="rank">4</div>
+                <div class="place-content">
+                    <div class="place-name">Taj Mahal</div>
+                    <div class="place-country">Agra, India</div>
+                    <div class="place-description">A magnificent white marble mausoleum built in the 17th century. Considered one of the greatest architectural masterpieces, it's a symbol of love and beauty.</div>
+                </div>
+            </div>
+            
+            <!-- 5. Christ the Redeemer -->
+            <div class="place-card">
+                <div class="rank">5</div>
+                <div class="place-content">
+                    <div class="place-name">Christ the Redeemer</div>
+                    <div class="place-country">Rio de Janeiro, Brazil</div>
+                    <div class="place-description">An enormous statue of Jesus Christ perched atop a mountain overlooking Rio de Janeiro. A symbol of Christianity and Brazilian culture, it's one of the New Seven Wonders.</div>
+                </div>
+            </div>
+            
+            <!-- 6. Machu Picchu -->
+            <div class="place-card">
+                <div class="rank">6</div>
+                <div class="place-content">
+                    <div class="place-name">Machu Picchu</div>
+                    <div class="place-country">Peru</div>
+                    <div class="place-description">An ancient Incan citadel nestled high in the Andes Mountains. This archaeological wonder showcases impressive masonry and offers breathtaking mountain vistas.</div>
+                </div>
+            </div>
+            
+            <!-- 7. Big Ben and Palace of Westminster -->
+            <div class="place-card">
+                <div class="rank">7</div>
+                <div class="place-content">
+                    <div class="place-name">Big Ben & Palace of Westminster</div>
+                    <div class="place-country">London, United Kingdom</div>
+                    <div class="place-description">The iconic clock tower and home of the British Parliament. An architectural masterpiece representing British heritage, culture, and governance.</div>
+                </div>
+            </div>
+            
+            <!-- 8. Colosseum -->
+            <div class="place-card">
+                <div class="rank">8</div>
+                <div class="place-content">
+                    <div class="place-name">Colosseum</div>
+                    <div class="place-country">Rome, Italy</div>
+                    <div class="place-description">An ancient amphitheater and remarkable symbol of Imperial Rome. Built in the 1st century, it once hosted gladiatorial contests and is a testament to Roman engineering.</div>
+                </div>
+            </div>
+            
+            <!-- 9. Statue of Christ in Corcovado -->
+            <div class="place-card">
+                <div class="rank">9</div>
+                <div class="place-content">
+                    <div class="place-name">Pyramids of Giza</div>
+                    <div class="place-country">Cairo, Egypt</div>
+                    <div class="place-description">Ancient monumental tombs built as resting places for pharaohs. Among the oldest and largest structures in the world, they showcase the engineering prowess of ancient Egypt.</div>
+                </div>
+            </div>
+            
+            <!-- 10. Statue of Liberty -->
+            <div class="place-card">
+                <div class="rank">10</div>
+                <div class="place-content">
+                    <div class="place-name">Sagrada Família</div>
+                    <div class="place-country">Barcelona, Spain</div>
+                    <div class="place-description">A breathtaking basilica designed by Antoni Gaudí with unique modernist architecture. Still under construction, it represents Gaudí's vision of blending nature and spirituality in design.</div>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2026 Top 10 Tourist Places | Discover the World's Most Magnificent Destinations</p>
+        </footer>
+    </div>
+</body>
+</html>
